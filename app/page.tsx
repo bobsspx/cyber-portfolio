@@ -1,24 +1,33 @@
 const projects = [
   {
     title: "BankGuard AI",
-    category: "AI • FinTech • Cybersecurity",
+    category: "AI • FINTECH • CYBERSECURITY",
     description:
-      "AI Banking Fraud and Cybersecurity Platform for transaction monitoring, fraud detection, login risk and security analytics.",
-    tech: "Next.js • FastAPI • PostgreSQL • Python • Machine Learning",
+      "AI-powered banking fraud and cybersecurity platform for transaction monitoring, fraud detection, login risk analysis and security operations.",
+    tech:
+      "Next.js • FastAPI • PostgreSQL • Python • Machine Learning",
+    github: "https://github.com/bobsspx/bankguard-ai",
+    demo: "#",
   },
   {
-    title: "SecureFactory Demo",
-    category: "Web Development • Cybersecurity",
+    title: "SecureFactory",
+    category: "WEB DEVELOPMENT • CYBERSECURITY",
     description:
-      "Secure business website designed for factories and SMEs with security-focused configuration and responsive design.",
-    tech: "Next.js • TypeScript • Web Security",
+      "Security-focused business website designed for factories and SMEs with responsive design, secure configuration and modern web architecture.",
+    tech:
+      "Next.js • TypeScript • Web Security",
+    github: "https://github.com/bobsspx/securefactory",
+    demo: "#",
   },
   {
     title: "Business Dashboard",
-    category: "Programming • Automation",
+    category: "AUTOMATION • DATA",
     description:
-      "Business dashboard that transforms operational data into clear reports and reduces repetitive manual work.",
-    tech: "Python • SQL • Dashboard • Automation",
+      "Business dashboard for converting operational data into useful reports while reducing repetitive manual workflows.",
+    tech:
+      "Python • SQL • Data Processing • Automation",
+    github: "https://github.com/bobsspx/business-dashboard",
+    demo: "#",
   },
 ];
 
@@ -26,7 +35,7 @@ export default function Home() {
   return (
     <main>
       <nav className="navbar">
-        <div className="logo">DEV.SEC</div>
+        <div className="logo">Bob / DEV</div>
 
         <div className="navLinks">
           <a href="#about">About</a>
@@ -47,8 +56,9 @@ export default function Home() {
         </h1>
 
         <p className="heroText">
-          Fourth-year student and developer focused on building secure websites,
-          business systems, automation and cybersecurity solutions.
+          Fourth-year developer specializing in secure web applications,
+          business automation and cybersecurity solutions that solve
+          real-world business problems.
         </p>
 
         <div className="buttons">
@@ -123,6 +133,26 @@ export default function Home() {
               <p>{project.description}</p>
 
               <small>{project.tech}</small>
+
+              <div className="projectLinks">
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub ↗
+                </a>
+
+                {project.demo !== "#" && (
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Live Demo ↗
+                  </a>
+                )}
+              </div>
             </article>
           ))}
         </div>
@@ -191,6 +221,15 @@ export default function Home() {
             target="_blank"
           >
             GitHub
+          </a>
+
+          <a
+            className="secondaryButton"
+            href="https://www.linkedin.com/in/YOUR_USERNAME"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
           </a>
         </div>
       </section>
