@@ -1,69 +1,205 @@
-import Image from "next/image";
+const projects = [
+  {
+    title: "BankGuard AI",
+    category: "AI • FinTech • Cybersecurity",
+    description:
+      "AI Banking Fraud and Cybersecurity Platform for transaction monitoring, fraud detection, login risk and security analytics.",
+    tech: "Next.js • FastAPI • PostgreSQL • Python • Machine Learning",
+  },
+  {
+    title: "SecureFactory Demo",
+    category: "Web Development • Cybersecurity",
+    description:
+      "Secure business website designed for factories and SMEs with security-focused configuration and responsive design.",
+    tech: "Next.js • TypeScript • Web Security",
+  },
+  {
+    title: "Business Dashboard",
+    category: "Programming • Automation",
+    description:
+      "Business dashboard that transforms operational data into clear reports and reduces repetitive manual work.",
+    tech: "Python • SQL • Dashboard • Automation",
+  },
+];
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <main>
+      <nav className="navbar">
+        <div className="logo">DEV.SEC</div>
+
+        <div className="navLinks">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
+      </nav>
+
+      <section className="hero">
+        <p className="eyebrow">WEB DEVELOPMENT • PROGRAMMING • CYBERSECURITY</p>
+
+        <h1>
+          Building secure
+          <br />
+          digital solutions.
+        </h1>
+
+        <p className="heroText">
+          Fourth-year student and developer focused on building secure websites,
+          business systems, automation and cybersecurity solutions.
+        </p>
+
+        <div className="buttons">
+          <a className="primaryButton" href="#projects">
+            View Projects
           </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
+
+          <a className="secondaryButton" href="#contact">
+            Contact Me
           </a>
         </div>
-      </main>
-    </div>
+      </section>
+
+      <section id="about" className="section">
+        <p className="sectionNumber">01 / ABOUT</p>
+
+        <h2>About Me</h2>
+
+        <p className="largeText">
+          I am a developer interested in web development, programming and
+          cybersecurity. I enjoy building secure systems that solve real
+          business problems.
+        </p>
+      </section>
+
+      <section id="skills" className="section">
+        <p className="sectionNumber">02 / SKILLS</p>
+
+        <h2>Technical Skills</h2>
+
+        <div className="grid">
+          <div className="card">
+            <h3>Web Development</h3>
+            <p>HTML, CSS, JavaScript, TypeScript, React and Next.js</p>
+          </div>
+
+          <div className="card">
+            <h3>Backend</h3>
+            <p>Python, FastAPI, REST API, PostgreSQL and SQL</p>
+          </div>
+
+          <div className="card">
+            <h3>Cybersecurity</h3>
+            <p>
+              Web Security, Vulnerability Assessment, Security Configuration
+              and Authentication Security
+            </p>
+          </div>
+
+          <div className="card">
+            <h3>Automation</h3>
+            <p>
+              Python automation, data processing, Excel/CSV automation and
+              business workflows
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" className="section">
+        <p className="sectionNumber">03 / PROJECTS</p>
+
+        <h2>Selected Projects</h2>
+
+        <div className="projectGrid">
+          {projects.map((project) => (
+            <article className="projectCard" key={project.title}>
+              <span>{project.category}</span>
+
+              <h3>{project.title}</h3>
+
+              <p>{project.description}</p>
+
+              <small>{project.tech}</small>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section id="services" className="section">
+        <p className="sectionNumber">04 / SERVICES</p>
+
+        <h2>Services</h2>
+
+        <div className="grid">
+          <div className="card">
+            <h3>Secure Business Website</h3>
+            <p>
+              Professional responsive websites with security-focused
+              configuration.
+            </p>
+
+            <strong>Starting ฿7,500</strong>
+          </div>
+
+          <div className="card">
+            <h3>Website Security Check</h3>
+
+            <p>
+              Basic website security assessment with findings and
+              recommendations.
+            </p>
+
+            <strong>Starting ฿3,500</strong>
+          </div>
+
+          <div className="card">
+            <h3>Dashboard & Automation</h3>
+
+            <p>
+              Reduce repetitive business tasks using dashboards and
+              automation.
+            </p>
+
+            <strong>Starting ฿5,000</strong>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" className="contact">
+        <p className="sectionNumber">05 / CONTACT</p>
+
+        <h2>Let's work together.</h2>
+
+        <p>
+          Available for freelance projects, internships and collaboration.
+        </p>
+
+        <div className="buttons">
+          <a
+            className="primaryButton"
+            href="mailto:thvasawinter@gmail.com"
+          >
+            Email Me
+          </a>
+
+          <a
+            className="secondaryButton"
+            href="https://github.com/bobsspx"
+            target="_blank"
+          >
+            GitHub
+          </a>
+        </div>
+      </section>
+
+      <footer>
+        <p>© 2026 Bob Sosamphanxay</p>
+
+        <p>Web Developer • Programmer • Cybersecurity</p>
+      </footer>
+    </main>
   );
 }
