@@ -16,8 +16,8 @@ const projects = [
       "Security-focused business website designed for factories and SMEs with responsive design, secure configuration and modern web architecture.",
     tech:
       "Next.js • TypeScript • Web Security",
-    github: "https://github.com/bobsspx/securefactory",
-    demo: "#",
+    github: "https://github.com/bobsspx/securefactory-demo",
+    demo: "https://securefactory-demo.vercel.app",
   },
   {
     title: "Business Dashboard",
