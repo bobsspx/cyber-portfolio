@@ -9,15 +9,24 @@ const projects = [
     github: "https://github.com/bobsspx/bankguard-ai",
     demo: "#",
   },
-  {
+    {
     title: "SecureFactory",
-    category: "WEB DEVELOPMENT • CYBERSECURITY",
+    category: "APPLICATION SECURITY • CYBERSECURITY",
+
     description:
-      "Security-focused business website designed for factories and SMEs with responsive design, secure configuration and modern web architecture.",
+      "Security-focused industrial operations dashboard with RBAC, secure sessions, audit logging, persistent rate limiting, session revocation, and PostgreSQL-backed production metrics.",
+
     tech:
-      "Next.js • TypeScript • Web Security",
-    github: "https://github.com/bobsspx/securefactory-demo",
-    demo: "https://securefactory-demo.vercel.app",
+      "Next.js • TypeScript • PostgreSQL • Neon • Vercel • Vitest",
+
+    github:
+      "https://github.com/bobsspx/securefactory-demo",
+
+    demo:
+      "https://securefactory-demo.vercel.app",
+
+    caseStudy:
+      "/projects/securefactory",
   },
   {
     title: "Business Dashboard",
@@ -152,6 +161,12 @@ export default function Home() {
                     Live Demo ↗
                   </a>
                 )}
+
+                {project.caseStudy && (
+                  <a href={project.caseStudy}>
+                    Case Study →
+                  </a>
+                )}
               </div>
             </article>
           ))}
@@ -201,7 +216,7 @@ export default function Home() {
       <section id="contact" className="contact">
         <p className="sectionNumber">05 / CONTACT</p>
 
-        <h2>Let's work together.</h2>
+        <h2>Let&apos;s work together.</h2>
 
         <p>
           Available for freelance projects, internships and collaboration.
