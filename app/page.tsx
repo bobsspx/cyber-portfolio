@@ -246,6 +246,15 @@ export default function Home() {
           >
             LinkedIn
           </a>
+
+          <a
+            className="secondaryButton"
+            href="/cv.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Download CV
+          </a>
         </div>
       </section>
 
