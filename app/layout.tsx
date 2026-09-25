@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import { Geist, Geist_Mono } from "next/font/google";
+
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,27 +15,43 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Bob Sspx | Developer & Cybersecurity",
-  description: "Developer portfolio specializing in secure web applications, programming, business automation and cybersecurity.",
-   keywords: [
-    "Web Developer",
-    "Software Developer",
+  title: {
+    default:
+      "Bob Sosamphanxay | Application Security Developer",
+
+    template:
+      "%s | Bob Sosamphanxay",
+  },
+
+  description:
+    "Portfolio of Bob Sosamphanxay, a developer focused on application security, cybersecurity and secure software development.",
+
+  keywords: [
+    "Application Security",
     "Cybersecurity",
+    "Secure Software Development",
+    "Full-Stack Developer",
     "Next.js",
+    "TypeScript",
     "Python",
-    "FastAPI",
-    "Programming",
-    "Portfolio",
+    "PostgreSQL",
+    "RBAC",
+    "JWT",
+    "Web Security",
   ],
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: ReactNode;
+}>) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable}`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body>{children}</body>
     </html>
   );
 }

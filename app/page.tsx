@@ -66,18 +66,19 @@ export default function Home() {
       </nav>
 
       <section className="hero">
-        <p className="eyebrow">WEB DEVELOPMENT • PROGRAMMING • CYBERSECURITY</p>
+        <p className="eyebrow">APPLICATION SECURITY • CYBERSECURITY • SECURE FULL-STACK DEVELOPMENT</p>
 
         <h1>
           Building secure
           <br />
-          digital solutions.
+          software systems.
         </h1>
 
         <p className="heroText">
-          Fourth-year developer specializing in secure web applications,
-          business automation and cybersecurity solutions that solve
-          real-world business problems.
+            I build secure web applications and backend systems with a focus on
+            application security, access control, authentication and real-world
+            business systems. My projects combine software engineering,
+            cybersecurity, databases and production deployment.
         </p>
 
         <div className="buttons">
@@ -107,34 +108,40 @@ export default function Home() {
         <p className="sectionNumber">02 / SKILLS</p>
 
         <h2>Technical Skills</h2>
-
         <div className="grid">
-          <div className="card">
-            <h3>Web Development</h3>
-            <p>HTML, CSS, JavaScript, TypeScript, React and Next.js</p>
-          </div>
-
-          <div className="card">
-            <h3>Backend</h3>
-            <p>Python, FastAPI, REST API, PostgreSQL and SQL</p>
-          </div>
-
-          <div className="card">
-            <h3>Cybersecurity</h3>
-            <p>
-              Web Security, Vulnerability Assessment, Security Configuration
-              and Authentication Security
-            </p>
-          </div>
-
-          <div className="card">
-            <h3>Automation</h3>
-            <p>
-              Python automation, data processing, Excel/CSV automation and
-              business workflows
-            </p>
-          </div>
+        <div className="card">
+          <h3>Application Security</h3>
+          <p>
+            Authentication, RBAC, session security, rate limiting,
+            audit logging, security headers and secure API design.
+          </p>
         </div>
+
+        <div className="card">
+          <h3>Full-Stack Development</h3>
+          <p>
+            Next.js, React, TypeScript, JavaScript,
+            REST APIs and responsive web applications.
+          </p>
+        </div>
+
+        <div className="card">
+          <h3>Backend & Database</h3>
+          <p>
+            Python, FastAPI, PostgreSQL, SQL,
+            data validation and server-side business logic.
+          </p>
+        </div>
+
+        <div className="card">
+          <h3>Testing & Deployment</h3>
+          <p>
+            Vitest, ESLint, production builds, Git,
+            GitHub, Vercel and Neon PostgreSQL.
+          </p>
+        </div>
+      </div>
+        
       </section>
 
       <section id="projects" className="section">
@@ -263,7 +270,8 @@ export default function Home() {
         <h2>Let&apos;s work together.</h2>
 
         <p>
-          Available for freelance projects, internships and collaboration.
+            Open to internships, junior software engineering,
+            application security and cybersecurity opportunities.
         </p>
 
         <div className="buttons">
@@ -284,15 +292,6 @@ export default function Home() {
 
           <a
             className="secondaryButton"
-            href="https://www.linkedin.com/in/YOUR_USERNAME"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            LinkedIn
-          </a>
-
-          <a
-            className="secondaryButton"
             href="/cv.pdf"
             target="_blank"
             rel="noopener noreferrer"
@@ -305,7 +304,7 @@ export default function Home() {
       <footer>
         <p>© 2026 Bob Sosamphanxay</p>
 
-        <p>Web Developer • Programmer • Cybersecurity</p>
+        <p>Application Security • Full-Stack Development • Cybersecurity</p>
       </footer>
     </main>
   );

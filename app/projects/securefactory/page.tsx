@@ -1,4 +1,22 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "SecureFactory Case Study",
+
+  description:
+    "SecureFactory v1.0.0 case study covering JWT authentication, RBAC, session revocation, PostgreSQL audit logging, rate limiting, production management and application security.",
+
+  openGraph: {
+    title:
+      "SecureFactory v1.0.0 — Application Security Case Study",
+
+    description:
+      "A security-focused industrial operations platform demonstrating secure full-stack development and application security.",
+
+    type: "article",
+  },
+};
 
 export default function SecureFactoryCaseStudy() {
   const securityFeatures = [
