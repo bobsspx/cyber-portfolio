@@ -353,3 +353,572 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+/* =========================
+   SecureFactory Case Study
+   ========================= */
+
+.caseStudyPage {
+  min-height: 100vh;
+  background: #080808;
+}
+
+.caseStudyNav {
+  width: min(1200px, 90%);
+  height: 90px;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 1px solid #222;
+}
+
+.caseBackLink {
+  font-weight: 800;
+}
+
+.caseNavLinks {
+  display: flex;
+  gap: 25px;
+}
+
+.caseNavLinks a {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.caseNavLinks a:hover {
+  color: #fff;
+}
+
+.caseHero {
+  width: min(1200px, 90%);
+  margin: auto;
+  padding: 110px 0 90px;
+}
+
+.caseBadges {
+  display: flex;
+  gap: 12px;
+
+  margin-bottom: 45px;
+}
+
+.caseBadges span {
+  padding: 7px 11px;
+
+  border: 1px solid #444;
+  border-radius: 999px;
+
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.caseBadges .caseRelease {
+  color: #71c38b;
+  border-color: #31543c;
+}
+
+.caseEyebrow,
+.caseSectionNumber {
+  color: #777;
+
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.caseHero h1 {
+  margin-top: 18px;
+
+  font-size: clamp(65px, 10vw, 130px);
+  line-height: 0.9;
+  letter-spacing: -5px;
+}
+
+.caseLead {
+  max-width: 850px;
+
+  margin-top: 40px;
+
+  color: #aaa;
+
+  font-size: 22px;
+  line-height: 1.6;
+}
+
+.caseActions {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 15px;
+
+  margin-top: 40px;
+}
+
+.caseMetrics {
+  width: min(1200px, 90%);
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  border: 1px solid #272727;
+  border-radius: 14px;
+
+  overflow: hidden;
+}
+
+.caseMetrics article {
+  min-height: 150px;
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background: #0e0e0e;
+
+  border-right: 1px solid #272727;
+}
+
+.caseMetrics article:last-child {
+  border-right: 0;
+}
+
+.caseMetrics strong {
+  font-size: 30px;
+}
+
+.caseMetrics span {
+  margin-top: 10px;
+
+  color: #777;
+
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.caseSection {
+  width: min(1200px, 90%);
+  margin: 130px auto 0;
+
+  padding-top: 100px;
+
+  border-top: 1px solid #222;
+}
+
+.caseSection h2 {
+  max-width: 850px;
+
+  margin-top: 20px;
+
+  font-size: clamp(40px, 5vw, 68px);
+  line-height: 1.05;
+
+  letter-spacing: -2px;
+}
+
+.caseTwoColumns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 80px;
+}
+
+.caseBody {
+  padding-top: 34px;
+}
+
+.caseBody p {
+  color: #aaa;
+
+  font-size: 18px;
+  line-height: 1.8;
+
+  margin-bottom: 24px;
+}
+
+.securityFeatureGrid {
+  margin-top: 55px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 15px;
+}
+
+.securityFeatureCard {
+  min-height: 245px;
+
+  padding: 28px;
+
+  background: #101010;
+
+  border: 1px solid #272727;
+  border-radius: 12px;
+}
+
+.securityFeatureCard > span,
+.architectureDetails span {
+  color: #777;
+
+  font-size: 10px;
+  letter-spacing: 1.5px;
+}
+
+.securityFeatureCard h3,
+.architectureDetails h3 {
+  margin-top: 35px;
+
+  font-size: 21px;
+}
+
+.securityFeatureCard p,
+.architectureDetails p {
+  margin-top: 15px;
+
+  color: #888;
+
+  line-height: 1.7;
+}
+
+.roleMatrix {
+  margin-top: 55px;
+
+  border: 1px solid #272727;
+  border-radius: 12px;
+
+  overflow: hidden;
+}
+
+.roleHeader,
+.roleRow {
+  display: grid;
+  grid-template-columns: 2fr repeat(3, 1fr);
+
+  align-items: center;
+}
+
+.roleHeader {
+  min-height: 60px;
+
+  background: #111;
+
+  color: #777;
+
+  font-size: 10px;
+  letter-spacing: 1.5px;
+}
+
+.roleHeader span,
+.roleRow span {
+  padding: 0 25px;
+}
+
+.roleRow {
+  min-height: 65px;
+
+  border-top: 1px solid #222;
+}
+
+.roleAllowed {
+  color: #71c38b;
+}
+
+.roleDenied {
+  color: #666;
+}
+
+.caseNote {
+  margin-top: 25px;
+
+  padding: 18px 20px;
+
+  color: #999;
+
+  background: #0d0d0d;
+
+  border: 1px solid #292929;
+  border-radius: 8px;
+
+  line-height: 1.7;
+}
+
+.architectureFlow {
+  margin-top: 55px;
+
+  display: grid;
+
+  grid-template-columns:
+    1fr auto 1fr auto 1fr auto 1fr;
+
+  gap: 12px;
+
+  align-items: center;
+}
+
+.architectureFlow > div {
+  min-height: 160px;
+
+  padding: 24px;
+
+  display: flex;
+  flex-direction: column;
+
+  background: #101010;
+
+  border: 1px solid #292929;
+  border-radius: 12px;
+}
+
+.architectureFlow > b {
+  color: #555;
+}
+
+.architectureFlow span {
+  color: #666;
+  font-size: 11px;
+}
+
+.architectureFlow strong {
+  margin-top: 28px;
+}
+
+.architectureFlow p {
+  margin-top: 8px;
+
+  color: #777;
+
+  font-size: 13px;
+}
+
+.architectureDetails {
+  margin-top: 15px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 15px;
+}
+
+.architectureDetails article {
+  padding: 28px;
+
+  background: #0c0c0c;
+
+  border: 1px solid #222;
+  border-radius: 12px;
+}
+
+.caseMiniGrid {
+  margin-top: 35px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 10px;
+}
+
+.caseMiniGrid span {
+  padding: 14px;
+
+  color: #aaa;
+
+  background: #0e0e0e;
+
+  border: 1px solid #292929;
+  border-radius: 8px;
+}
+
+.hardeningList {
+  margin-top: 55px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 12px;
+}
+
+.hardeningList div {
+  padding: 19px;
+
+  background: #101010;
+
+  border: 1px solid #292929;
+  border-radius: 9px;
+
+  color: #aaa;
+}
+
+.hardeningList span {
+  margin-right: 10px;
+
+  color: #71c38b;
+}
+
+.verificationGrid {
+  margin-top: 55px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 15px;
+}
+
+.verificationGrid article {
+  padding: 30px;
+
+  background: #101010;
+
+  border: 1px solid #292929;
+  border-radius: 12px;
+}
+
+.verificationGrid strong {
+  font-size: 35px;
+}
+
+.verificationGrid p {
+  margin-top: 20px;
+
+  color: #888;
+
+  line-height: 1.7;
+}
+
+.technologyTags {
+  margin-top: 50px;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 10px;
+}
+
+.technologyTags span {
+  padding: 12px 16px;
+
+  color: #aaa;
+
+  border: 1px solid #333;
+  border-radius: 999px;
+
+  font-size: 13px;
+}
+
+.caseFinal {
+  width: min(1200px, 90%);
+  margin: 140px auto 0;
+
+  padding: 100px 0 140px;
+
+  border-top: 1px solid #222;
+}
+
+.caseFinal h2 {
+  max-width: 900px;
+
+  margin-top: 20px;
+
+  font-size: clamp(45px, 7vw, 85px);
+  line-height: 1;
+  letter-spacing: -3px;
+}
+
+.caseFinal > p:not(.caseSectionNumber) {
+  max-width: 750px;
+
+  margin-top: 30px;
+
+  color: #999;
+
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .caseMetrics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .caseMetrics article {
+    border-bottom: 1px solid #272727;
+  }
+
+  .caseTwoColumns {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+  }
+
+  .securityFeatureGrid,
+  .architectureDetails,
+  .hardeningList,
+  .verificationGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .architectureFlow {
+    grid-template-columns: 1fr;
+  }
+
+  .architectureFlow > b {
+    text-align: center;
+    transform: rotate(90deg);
+  }
+}
+
+@media (max-width: 600px) {
+  .caseStudyNav {
+    height: 75px;
+  }
+
+  .caseNavLinks {
+    gap: 12px;
+  }
+
+  .caseHero {
+    padding-top: 70px;
+  }
+
+  .caseHero h1 {
+    letter-spacing: -3px;
+  }
+
+  .caseBadges {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .caseLead {
+    font-size: 18px;
+  }
+
+  .caseMetrics,
+  .securityFeatureGrid,
+  .architectureDetails,
+  .hardeningList,
+  .verificationGrid,
+  .caseMiniGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .caseMetrics article {
+    border-right: 0;
+  }
+
+  .roleHeader,
+  .roleRow {
+    grid-template-columns: 1.8fr repeat(3, 0.8fr);
+  }
+
+  .roleHeader span,
+  .roleRow span {
+    padding: 0 10px;
+
+    font-size: 11px;
+  }
+}
