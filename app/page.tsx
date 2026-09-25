@@ -1,33 +1,42 @@
 const projects = [
   {
+    title: "SecureFactory",
+    category: "APPLICATION SECURITY • CYBERSECURITY",
+    description:
+      "Security-focused industrial operations platform with server-side RBAC, JWT authentication, session revocation, persistent login rate limiting, audit logging, production management and PostgreSQL-backed metrics.",
+    tech:
+      "Next.js 16 • TypeScript • PostgreSQL • Neon • JWT • Vitest • Vercel",
+    github:
+      "https://github.com/bobsspx/securefactory-demo",
+    demo:
+      "https://securefactory-demo.vercel.app",
+    caseStudy:
+      "/projects/securefactory",
+
+    featured: true,
+    version: "v1.0.0",
+    releaseStatus: "PRODUCTION DEPLOYED",
+
+    highlights: [
+      "45 automated tests",
+      "0 known npm vulnerabilities at v1.0 audit",
+      "RBAC + session revocation",
+      "PostgreSQL audit logging",
+    ],
+  },
+
+  {
     title: "BankGuard AI",
     category: "AI • FINTECH • CYBERSECURITY",
     description:
       "AI-powered banking fraud and cybersecurity platform for transaction monitoring, fraud detection, login risk analysis and security operations.",
     tech:
       "Next.js • FastAPI • PostgreSQL • Python • Machine Learning",
-    github: "https://github.com/bobsspx/bankguard-ai",
+    github:
+      "https://github.com/bobsspx/bankguard-ai",
     demo: "#",
   },
-    {
-    title: "SecureFactory",
-    category: "APPLICATION SECURITY • CYBERSECURITY",
 
-    description:
-      "Security-focused industrial operations dashboard with RBAC, secure sessions, audit logging, persistent rate limiting, session revocation, and PostgreSQL-backed production metrics.",
-
-    tech:
-      "Next.js • TypeScript • PostgreSQL • Neon • Vercel • Vitest",
-
-    github:
-      "https://github.com/bobsspx/securefactory-demo",
-
-    demo:
-      "https://securefactory-demo.vercel.app",
-
-    caseStudy:
-      "/projects/securefactory",
-  },
   {
     title: "Business Dashboard",
     category: "AUTOMATION • DATA",
@@ -35,7 +44,8 @@ const projects = [
       "Business dashboard for converting operational data into useful reports while reducing repetitive manual workflows.",
     tech:
       "Python • SQL • Data Processing • Automation",
-    github: "https://github.com/bobsspx/business-dashboard",
+    github:
+      "https://github.com/bobsspx/business-dashboard",
     demo: "#",
   },
 ];
@@ -134,14 +144,48 @@ export default function Home() {
 
         <div className="projectGrid">
           {projects.map((project) => (
-            <article className="projectCard" key={project.title}>
-              <span>{project.category}</span>
+            <article
+              className={`projectCard ${
+                project.featured
+                  ? "featuredProject"
+                  : ""
+              }`}
+              key={project.title}
+            >
+              {project.featured && (
+                <div className="featuredMeta">
+                  <span className="featuredBadge">
+                    FEATURED PROJECT
+                  </span>
+
+                  <span className="releaseBadge">
+                    {project.version} •{" "}
+                    {project.releaseStatus}
+                  </span>
+                </div>
+              )}
+
+              <span className="projectCategory">
+                {project.category}
+              </span>
 
               <h3>{project.title}</h3>
 
               <p>{project.description}</p>
 
               <small>{project.tech}</small>
+
+              {project.highlights && (
+                <div className="projectHighlights">
+                  {project.highlights.map(
+                    (highlight) => (
+                      <span key={highlight}>
+                        {highlight}
+                      </span>
+                    )
+                  )}
+                </div>
+              )}
 
               <div className="projectLinks">
                 <a

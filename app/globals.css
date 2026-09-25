@@ -240,3 +240,116 @@ footer {
   color: #aaa;
   border-color: #aaa;
 }
+
+.featuredProject {
+  grid-column: span 2;
+
+  background:
+    linear-gradient(
+      145deg,
+      #151515,
+      #0e0e0e
+    );
+
+  border-color: #383838;
+}
+
+.featuredProject h3 {
+  font-size: 38px;
+  margin-top: 28px;
+}
+
+.featuredProject p {
+  max-width: 760px;
+  font-size: 17px;
+}
+
+.featuredMeta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+
+  margin-bottom: 20px;
+}
+
+.featuredBadge,
+.releaseBadge {
+  width: fit-content;
+
+  padding: 7px 10px;
+
+  border-radius: 999px;
+
+  font-size: 10px !important;
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+.featuredBadge {
+  color: #f5f5f5 !important;
+  border: 1px solid #444;
+}
+
+.releaseBadge {
+  color: #71c38b !important;
+  border: 1px solid #31543c;
+}
+
+.projectCategory {
+  color: #777 !important;
+  font-size: 12px !important;
+}
+
+.projectHighlights {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 10px;
+
+  margin-top: 28px;
+}
+
+.projectHighlights span {
+  padding: 12px 14px;
+
+  background: #0a0a0a;
+
+  border:
+    1px solid #292929;
+
+  border-radius: 7px;
+
+  color: #aaa !important;
+
+  font-size: 12px !important;
+}
+
+.featuredProject .projectLinks {
+  margin-top: 32px;
+}
+
+@media (max-width: 900px) {
+  .featuredProject {
+    grid-column: span 1;
+  }
+
+  .featuredProject h3 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .featuredMeta {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .projectHighlights {
+    grid-template-columns: 1fr;
+  }
+}
